@@ -28,5 +28,3 @@ A weather application fetching data from a weather API to display current condit
 A small tool to fetch GitHub user data using GitHub API.  
 <img width="468" height="770" alt="GitHub User Fetch Screenshot" src="https://github.com/user-attachments/assets/a364eb2b-2e03-4fe0-b9ce-b51f6cffd57b" />
 
-   ```bash
-   git clone https://github.com/kaimuzx78/Js-project.git
