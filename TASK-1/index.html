@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .player {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 350px;
+            width: 730px;
+            border: 1px solid black;
+            margin-left: 12px;
+            margin-top: 10px;
+        }
+
+        .rdiv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            width: 400px;
+            border: 1px solid black;
+            margin-left: 12px;
+            margin-top: 10px;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #textar {
+            width: 100%;
+            max-width: 730px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+<section class="parent">
+    <div class="left">
+        <div class="player"></div>
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, impedit?</p>
+        <textarea name="textarea" id="textar" rows="12" cols="50"></textarea>
+        <button class="btn">Comment</button>
+    </div>
+    <div class="right">
+        <div class="rdiv"></div>
+        <div class="rdiv"></div>
+        <div class="rdiv"></div>
+    </div>
+</section>
+<script src="./app.js"></script>
+
+<body>
+</body>
+
+</html>

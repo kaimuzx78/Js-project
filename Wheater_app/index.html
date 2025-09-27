@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-shadow: 0px 0px 15px skyblue;
+        }
+
+        .a1 form {
+            display: flex;
+            gap: 20px;
+        }
+
+        form input {
+            padding: 15px 20px;
+            outline: none;
+            border: 1px solid green;
+            border-radius: 12px;
+        }
+
+        form button {
+            padding: 15px 20px;
+            border: none;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            border-radius: 17px;
+            background-color: DodgerBlue;
+        }
+
+        img {
+            height: 50px;
+            width: 50px;
+        }
+
+        #main-img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .a2 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .a2 h3 {
+            font-size: 50px;
+        }
+
+        .a3 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 50px;
+            margin-top: 20px;
+        }
+
+        .left,
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .err {
+            position: fixed;
+            top: 20px;
+            right: 50px;
+            padding: 10px 15px;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="err">
+        <h4></h4>
+    </div>
+    <div class="container">
+        <div class="main">
+            <aside class="a1">
+                <form>
+                    <input type="text" name="city" placeholder="Enter city">
+                    <button type="submit">Search</button>
+                </form>
+            </aside>
+
+            <aside class="a2">
+                <img src="https://purepng.com/public/uploads/large/purepng.com-weather-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596142qx4ep.png"
+                    alt="img-1" id="main-img" />
+                <h1 class="display-temp">15°C</h1>
+                <h2 class="display-city">Bhiwandi</h2>
+            </aside>
+
+
+            <aside class="a3">
+                <div class="left">
+                    <article>
+                        <img src="https://cdn-icons-png.flaticon.com/512/6393/6393221.png" alt="img-2">
+                    </article>
+                    <article>
+                        <span class="display-humidity">22%</span>
+                        <span>Humidity</span>
+                    </article>
+                </div>
+
+                <div class="right">
+                    <article>
+                        <img src="https://cdn-icons-png.freepik.com/256/17849/17849228.png?semt=ais_white_label"
+                            alt="img-3">
+                    </article>
+                    <article>
+                        <span class="display-wind">2.5km/hr</span>
+                        <span>Wind Speed</span>
+                    </article>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

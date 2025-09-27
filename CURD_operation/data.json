@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "name": "MOe",
+      "email": "Shanna@melissa.tv",
+      "phone": "010-692-6593 x09125",
+      "id": "2"
+    },
+    {
+      "name": "Aadesh",
+      "email": "Aadeshlaw@gamil.com",
+      "phone": "777777777",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "name": "Patricia Lebsack",
+      "username": "Karianne",
+      "email": "Julianne.OConner@kory.org",
+      "address": {
+        "street": "Hoeger Mall",
+        "suite": "Apt. 692",
+        "city": "South Elvis",
+        "zipcode": "53919-4257",
+        "geo": {
+          "lat": "29.4572",
+          "lng": "-164.2990"
+        }
+      },
+      "phone": "493-170-9623 x156",
+      "website": "kale.biz",
+      "company": {
+        "name": "Robel-Corkery",
+        "catchPhrase": "Multi-tiered zero tolerance productivity",
+        "bs": "transition cutting-edge web services"
+      }
+    },
+    {
+      "id": "9850",
+      "name": "KAIMU",
+      "email": "ka@gmail.com",
+      "phone": "70xx41xx71"
+    }
+  ],
+  "admin": [],
+  "employee": []
+}

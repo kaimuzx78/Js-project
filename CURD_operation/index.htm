@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CURD</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        article {
+            width: 80%;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table,
+        td,
+        th,
+        tr {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px 20px;
+        }
+
+        th {
+            background-color: #20B2AA;
+            color: #fff;
+        }
+
+        .add-data {
+            font-size: 25px;
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .container-add {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            background-color: azure;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .add-form-data {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            width: 400px;
+        }
+
+        input {
+            padding: 10px 20px;
+            border: 1px solid green;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #20B2AA;
+            color: #fff;
+            border-radius: 30px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .h1 {
+            text-align: center;
+            color: #20B2AA;
+            border: 1px solid green;
+            border-radius: 100px;
+        }
+
+        .fa-xmark {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: red;
+            cursor: pointer;
+        }
+
+        .container-read {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .read-box {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            width: 400px;
+        }
+
+        .container-read p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <article>
+            <span class="add-data">ADD+</span>
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>PHONE</th>
+                    <th>MORE ACTION</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </article>
+    </div>
+
+    <div class="container-add">
+        <i class="fa-solid fa-xmark"></i>
+        <form class="add-form-data">
+            <h1 class="h1">Add data</h1>
+            <hr>
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="text" name="email" id="email" placeholder="Email">
+            <input type="text" name="phone" id="phone" placeholder="Phone">
+            <button type="submit">Add User</button>
+        </form>
+    </div>
+
+    <!-- read data -->
+    <div class="container-read">
+        <i class="fa-solid fa-xmark close-read"></i>
+        <div class="read-box">
+            <h1 class="h1">User Details</h1>
+            <hr>
+            <p><strong>ID:</strong> <span id="read-id"></span></p>
+            <p><strong>Name:</strong> <span id="read-name"></span></p>
+            <p><strong>Email:</strong> <span id="read-email"></span></p>
+            <p><strong>Phone:</strong> <span id="read-phone"></span></p>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
