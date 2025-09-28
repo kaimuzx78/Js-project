@@ -6,6 +6,12 @@ A collection of small JavaScript projects demonstrating CRUD operations, API fet
 
 ## 🟢 Projects Included
 
+### 0. Simple Login System
+LOGIN Page Auth
+<img width="200" height="350" alt="image" src="https://github.com/user-attachments/assets/2853ebc3-8c15-448f-8501-618bc2f169bd" />
+<img width="418" height="163" alt="image" src="https://github.com/user-attachments/assets/a3f6d5e0-ffe3-4892-94a3-fa18c1f83160" />
+
+
 ### 1. CURD OPERATION
 
 A simple CRUD (Create, Read, Update, Delete) application using JavaScript and JSON-server.  
