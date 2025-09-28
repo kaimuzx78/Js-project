@@ -42,8 +42,18 @@
         }
 
         button {
-            padding: 10px;
+            padding: 15px;
+            height: 45px;
+            width: 100px;
             border-radius: 10px;
+            color: #fff;
+            background-color: black;
+            font-weight: bold;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
     </style>
 </head>
@@ -51,17 +61,20 @@
 <body>
     <div class="maincontainer">
         <div class="loginscreen">
-            <form>
-                <h1>Login</h1>
+            <form id="loginForm">
+                <h1>S.BI Bank - Login</h1>
                 <hr>
                 <div class="inputs">
-                    <input type="text" placeholder="Enter UserName">
-                    <input type="text" placeholder="Enter Password">
+                    <input type="text" id="username" name="username" placeholder="Enter User Name"
+                        autocomplete="username">
+                    <input type="password" id="password" name="password" placeholder="Enter Password"
+                        autocomplete="new-password">
                     <button type="submit">Log In</button>
                 </div>
             </form>
         </div>
     </div>
+    <script src="./app.js"></script>
 </body>
 
 </html>
