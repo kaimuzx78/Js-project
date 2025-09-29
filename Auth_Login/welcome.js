@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   let welcomeText = document.getElementById("Welcome");
-  welcomeText.textContent = `Welcome, ${user.username} (ID: ${user.id})`;
+  welcomeText.textContent = `Welcome, ${user.username} (ID: ${user.id}) A/C : ${user.blc} `;
 
   let btn = document.createElement("button");
   btn.textContent = "Logout";
